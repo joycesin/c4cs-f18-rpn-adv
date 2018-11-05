@@ -8,7 +8,7 @@ def calculate(arg):
 	for token in tokens:
 		try:
 			stack.append(int(token))
-		except ValueError:)
+		except ValueError:
 			val2 = stack.pop()
 			val1 = stack.pop()
 			if token == '+':
