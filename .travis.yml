@@ -4,6 +4,10 @@ python:
 install:
   - pip install coveralls
 script:
+<<<<<<< HEAD
   - coverage run -m unittest test_rpn
 after_success:
   coveralls
+=======
+  - python -m unittest
+>>>>>>> parent of 0c51079... edited config file
