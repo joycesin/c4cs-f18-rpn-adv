@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+import sys
+from termcolor import colored, cprint
 
 def calculate(arg):
 	stack = []
@@ -32,7 +34,9 @@ def main():
 	while True:
 		try:
 			result = calculate(input('rpn calc> '))
-			print(result)
+			#print_red_on_cyan(result)
+			#print(result)
+			cprint(result,'green','on_red')
 		except ValueError:
 			pass
 
