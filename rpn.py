@@ -19,7 +19,8 @@ def calculate(arg):
 				result = 1
 				for x in range(val2):
 					result = result * val1 
-
+			elif token == '*':
+				result = val1 * val2
 			stack.append(result)
 	if len(stack) > 1:
 		raise ValueError("Too many arguments on the stack")
